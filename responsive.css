@@ -1,0 +1,108 @@
+@media screen and (max-width:1024px){
+    #headerContainer{
+        grid-auto-flow: row;
+    }
+    .content-right{
+        z-index: 1;
+    }
+    .content-left{
+        display: none;
+    }
+    .hamburger{
+        display: grid;;
+    }
+    nav.nav ul {
+        display: grid;
+        grid-auto-flow: row;
+        width: 250px;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 100;
+        padding: 0;
+        background-color: #fff;
+        transform: translateX(100%);
+        transition: all 0.5s;
+    }
+    nav.nav .active{
+        transform: translateX(0);
+    }
+
+    nav.nav ul.events-dropdown,.nav.nav ul.experience-dropdown,nav.nav ul.travel-dropdown{
+        display: none;
+    }
+    nav ul li a .polygon{
+        display: none;
+    }
+    nav ul li a {
+        color: #000;
+    }
+    nav ul li  {
+        padding: 20px 10px;
+        z-index: 100;
+
+    }
+    .header-right ul{
+        justify-items: center;
+    }
+    
+    .container{
+        padding: 10px 50px;
+    }
+    #home{
+        padding: 0;
+        background: none;
+    }
+    section.para-sports .container{
+        padding: 20px 50px;
+    }
+    .popular-events-card-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+    }
+    section.resource .container{
+        padding: 20px 50px;
+    }
+    section.resource-brands .container{
+        padding: 20px 50px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+    footer.footer .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    section.copyright .container{
+        grid-auto-flow: row;
+        justify-items: center;
+        gap: 50px;
+    }
+  
+}
+
+@media screen and (max-width:540px) {
+    .container{
+        padding: 20px;
+    }
+    .popular-events-card-container{
+        grid-template-columns: 1fr;
+    }
+    section.resource-brands .container{
+        grid-template-columns: 1fr;
+    }
+    #call-menu{
+        display: none;
+    }
+    .content-right{
+        display: none;
+    }
+    .owl-theme .owl-nav.disabled+.owl-dots{
+        bottom: 0;
+    }
+    .logo img{
+        width: 50%;
+    }
+}
