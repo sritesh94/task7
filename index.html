@@ -76,39 +76,40 @@
                     <nav class="nav">
                         <ul class="navmenu">
                             <li class="home"><a href="" id="home">Home</a></li>
-                            <li><a href="">Sports Events <img src="images/Polygon 1.svg" alt="" class="polygon"></a>
+                            <li class="dropdown-container"><a>Sports Events <img src="images/Polygon 1.svg" alt="" class="polygon"></a>
     
-                                   <ul class="events-dropdown dropdown">
-                                       <li><a href="">First Item</a></li>
-                                       <li><a href="">Second Item</a></li>
-                                       <li><a href="">Third Item</a></li>
-                                       <li><a href="">Fourth Item</a></li>
-                                       <li><a href="">Fifth Item</a></li>
-                                       <li><a href="">Sixth Item</a></li>
+                                   <ul class="dropdown">
+                                    <li><a>First Item</a></li>
+                                    <li><a>Second Item</a></li>
+                                    <li><a>Third Item</a></li>
+                                    <li><a>Fourth Item</a></li>
+                                    <li><a>Fifth Item</a></li>
+                                    <li><a>Sixth Item</a></li>
                                    </ul>
-    
                             </li>
-                            <li><a href="">Sports Experiences <img src="images/Polygon 1.svg" alt="" class="polygon"></a>
+
+                            <li class="dropdown-container"><a>Sports Experiences <img src="images/Polygon 1.svg" alt="" class="polygon"></a>
     
-                                <ul class="experience-dropdown dropdown">
-                                    <li><a href="">First Item</a></li>
-                                    <li><a href="">Second Item</a></li>
-                                    <li><a href="">Third Item</a></li>
-                                    <li><a href="">Fourth Item</a></li>
-                                    <li><a href="">Fifth Item</a></li>
-                                    <li><a href="">Sixth Item</a></li>
+                                <ul class="dropdown">
+                                    <li><a>First Item</a></li>
+                                    <li><a>Second Item</a></li>
+                                    <li><a>Third Item</a></li>
+                                    <li><a>Fourth Item</a></li>
+                                    <li><a>Fifth Item</a></li>
+                                    <li><a>Sixth Item</a></li>
                                 </ul>
     
                             </li>
-                            <li><a href="">Travel Planners <img src="images/Polygon 1.svg" class="polygon"></a>
+
+                            <li class="dropdown-container"><a>Travel Planners <img src="images/Polygon 1.svg" class="polygon"></a>
     
-                                <ul class="travel-dropdown dropdown">
-                                    <li><a href="">First Item</a></li>
-                                    <li><a href="">Second Item</a></li>
-                                    <li><a href="">Third Item</a></li>
-                                    <li><a href="">Fourth Item</a></li>
-                                    <li><a href="">Fifth Item</a></li>
-                                    <li><a href="">Sixth Item</a></li>
+                                <ul class=" dropdown">
+                                    <li><a>First Item</a></li>
+                                    <li><a>Second Item</a></li>
+                                    <li><a>Third Item</a></li>
+                                    <li><a>Fourth Item</a></li>
+                                    <li><a>Fifth Item</a></li>
+                                    <li><a>Sixth Item</a></li>
                                 </ul>
                             </li>
                             <li><a href="">About</a></li>
@@ -119,11 +120,29 @@
                 <div class="header-right">
                         <ul class="icons">
                             <li><a href=""><img src="images/united-states.svg" alt=""></a></li>
-                            <li><a href=""><img src="images/XMLID_22_.svg" alt=""></a></li>
-                            <li><a href=""><img src="images/004-avatar1.png" alt=""></a></li>
+                            <li class="search"><a><img src="images/XMLID_22_.svg" alt=""></a></li>
+                            <li class="avatar-menu"><a><img src="images/004-avatar1.png" alt=""></a>
+                                <div class="profile-menu">
+                                    <ul class="profile">
+                                       <li><img src="images/004-avatar1.png" alt=""></li>
+                                       <li>User Name</li>
+                                    </ul>
+                                    <ul class="settings">
+                                        <li>Settings</li>
+                                        <li>Registration / Login</li>
+                                    </ul>
+                                </div>
+                            </li>
                             <li><a href=""><img src="images/001-heart.png" alt=""></a></li>
                             <li class="cart"><a href=""><img src="images/002-shopping-cart.png" alt="" class="cart-img"></a></li>
                         </ul>
+
+                        <div class="searchbar">
+                            <form action="">
+                                <input type="text" placeholder="Search here...">
+                            </form>  
+                        </div>
+
                 </div>
                 <div id="call-menu">
                     <div class="call-image">
@@ -182,19 +201,17 @@
                             <p>Travel to see the 2022 MLB All Star Game in Los Angeles, California at Dodger Stadiu...</p>
                         </div>
 
+                        <div class="view-more">
 
-                    <div class="view-more">
-                        <div class="view-icon">
-                            <img src="images/down-chevron (2).svg" alt="">
+                            <div class="view-icon">
+                                <img src="images/down-chevron (2).svg" alt="" class="span-images">
+                                <span>VIEW MORE</span>
+    
+                            </div>
+
                         </div>
-                        <div class="view-text">
-                            <span>VIEW MORE</span>
-                        </div>
-                    </div>
-
 
                     </div>
-
 
                     <div class="date-after">
                         <span>Jul 12, 2022</span>
@@ -219,16 +236,15 @@
                         </div>
 
                         <div class="view-more">
-                            <div class="view-icon">
-                                <img src="images/down-chevron (2).svg" alt="">
-                            </div>
-                            <div class="view-text">
-                                <span>VIEW MORE</span>
-                            </div>
-                        </div>
-    
-                    </div>
 
+                            <div class="view-icon">
+                                <img src="images/down-chevron (2).svg" alt="" class="span-images">
+                                <span>VIEW MORE</span>
+    
+                            </div>
+
+                        </div>
+                    </div>
 
                     <div class="date-after">
                         <span>Jul 12, 2022</span>
@@ -253,12 +269,14 @@
                         </div>
 
                         <div class="view-more">
+
                             <div class="view-icon">
-                                <img src="images/down-chevron (2).svg" alt="">
-                            </div>
-                            <div class="view-text">
+                                <img src="images/down-chevron (2).svg" alt="" class="span-images">
                                 <span>VIEW MORE</span>
+    
                             </div>
+
+
                         </div>
 
                     </div>
@@ -286,16 +304,16 @@
                         </div>
 
                         <div class="view-more">
+
                             <div class="view-icon">
-                                <img src="images/down-chevron (2).svg" alt="">
-                            </div>
-                            <div class="view-text">
+                                <img src="images/down-chevron (2).svg" alt="" class="span-images">
                                 <span>VIEW MORE</span>
+    
                             </div>
+
                         </div>
 
                     </div>
-                 
 
                     <div class="date-after">
                         <span>Jul 12, 2022</span>
@@ -345,12 +363,13 @@
                         </div>
 
                         <div class="view-more">
+
                             <div class="view-icon">
-                                <img src="images/down-chevron (2).svg" alt="">
-                            </div>
-                            <div class="view-text">
+                                <img src="images/down-chevron (2).svg" alt="" class="span-images">
                                 <span>VIEW MORE</span>
+    
                             </div>
+
                         </div>
 
                     </div>
@@ -378,12 +397,13 @@
                         </div>
 
                         <div class="view-more">
+
                             <div class="view-icon">
-                                <img src="images/down-chevron (2).svg" alt="">
-                            </div>
-                            <div class="view-text">
+                                <img src="images/down-chevron (2).svg" alt="" class="span-images">
                                 <span>VIEW MORE</span>
+    
                             </div>
+
                         </div>
                     </div>
 
@@ -410,12 +430,14 @@
                         </div>
 
                         <div class="view-more">
+
                             <div class="view-icon">
-                                <img src="images/down-chevron (2).svg" alt="">
-                            </div>
-                            <div class="view-text">
+                                <img src="images/down-chevron (2).svg" alt="" class="span-images">
                                 <span>VIEW MORE</span>
+    
                             </div>
+
+
                         </div>
 
                     </div>
@@ -443,12 +465,13 @@
                         </div>
 
                         <div class="view-more">
+
                             <div class="view-icon">
-                                <img src="images/down-chevron (2).svg" alt="">
-                            </div>
-                            <div class="view-text">
+                                <img src="images/down-chevron (2).svg" alt="" class="span-images">
                                 <span>VIEW MORE</span>
+    
                             </div>
+
                         </div>
 
                     </div>

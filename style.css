@@ -57,55 +57,109 @@ a{
     color: #fff;
 }
 
+
 #headerContainer{
     display: grid;
     grid-auto-flow: column;
     align-items: center;
     position: absolute;
     top: 0;
-    padding-top: 0;
     z-index: 1;
     background-color: rgba(6,49,104,0.7);
 }
-#home{
-    background-color: #800112;
+
+.nav ul li{
+    position: relative;
 }
-.dropdown{
-    display: grid;
-    grid-auto-flow: row;
+.nav ul li ul{
     position: absolute;
-    background: #163D67;
-    padding: 5px 15px;
-    display: none;
-}
-.dropdown li {
-    padding: 8px;
 }
 
-nav ul{
-    display: grid; 
-    grid-auto-flow: column;
-    align-items: center;
-    padding-top: 22px;
-}
-nav ul li a{
+ul.navmenu li a{
     font-size: 1.25rem;
-    color: #fff;
 }
+ul.navmenu {
+    display: grid;
+    grid-auto-flow: column;
+    padding-top: 22px;
+    justify-items: end;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+ul.dropdown {
+    display: grid;
+    grid-auto-flow: row;
+    background-color: rgb(6,49,104);
+    top: 16px;
+    left: 20px;
+    width: 150px;
+    padding: 10px 15px;
+    z-index: 50;
+    display: none;
+}
+ul.dropdown li{
+    padding: 5px 0;
+}
+
+.header-right .icons{
+    position: relative;
+}
+
+.search{
+    cursor: pointer;
+}
+.header-right .searchbar{
+    margin-top: 5px;
+    position: absolute;
+    display: none;
+}
+
+.searchbar input{
+    width: 350px;
+    padding: 8px;
+    outline: none;
+    border: 2px solid;
+    border-color: #51839B;
+}
+
+.dropdown-container:hover .dropdown{
+    display: grid;
+}
+
 .header-right ul{
     display: grid; 
     grid-auto-flow: column;
     align-items: center;
     justify-items: end;
     padding-top: 22px;
+}
+.avatar-menu{
+    cursor: pointer;
+    position: relative;
+}
+.profile-menu {
+    color: #fff;
+    width: 200px;
+    background-color: #063168;
+    padding: 15px;
+    border-radius: 15px;
+    position: absolute;
+    display: none;
+    cursor: pointer;
+    left: -20px;
+}
+ul.profile{
+    justify-items:start;
+    padding: 5px;
+}
+ul.settings{
+    grid-auto-flow:row;
+    justify-items: start;
+}
+ul.settings li {
+    padding: 5px 0;
+}
 
-}
-nav ul li:hover .dropdown{
-    display: grid;
-}
-nav ul li a .polygon{
-    margin-left: 3px;
-}
 .logo{
     justify-self: start;
 }
@@ -127,7 +181,7 @@ li.cart{
     position: absolute;
     right: 10px;
     top: 0;
-    padding: 15px;
+    padding: 5px;
     background-color: #fff;
     z-index: 20;
     cursor: pointer;
@@ -191,13 +245,7 @@ li.cart{
     right: 10px;
     z-index: 20;
 }
-#home {
-    background-color: #800112;
-    padding-top: 55px;
-    padding-bottom: 40px;
-    padding-left: 25px;
-    padding-right: 25px;
-}
+
 
 .owl-theme .owl-nav.disabled+.owl-dots{
     position: absolute;
@@ -321,9 +369,29 @@ figure.popular-events {
     justify-content: start;
     padding-top: 10px;
 }
-
-.view-icon{
-    padding-right: 8px;
+.view-icon {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    gap: 10px;
+}
+.view-icon:hover:before{
+    content: '';
+    position: absolute;
+    width: 140px;
+    height: 40px;
+    background-color: #800112;
+    border-radius: 5px;
+    color: #fff;
+    transition: all 1s;
+}
+.view-icon:hover .span-images{
+    z-index: 2;
+    background: none;
+}
+.view-icon:hover span{
+    color: #fff;
+    z-index: 2;
 }
 
 .sports-card{

@@ -1,4 +1,5 @@
 @media screen and (max-width:1024px){
+   
     #headerContainer{
         grid-auto-flow: row;
     }
@@ -9,39 +10,48 @@
         display: none;
     }
     .hamburger{
-        display: grid;;
+        display: block;
+        right: 30px;
     }
-    nav.nav ul {
-        display: grid;
-        grid-auto-flow: row;
-        width: 250px;
+    ul.navmenu {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgb(6,49,104);
         position: fixed;
         top: 0;
         right: 0;
-        z-index: 100;
-        padding: 0;
-        background-color: #fff;
-        transform: translateX(100%);
+        z-index: 50;
         transition: all 0.5s;
+        transform: translateX(100%);
     }
-    nav.nav .active{
+    .nav .active{
         transform: translateX(0);
     }
+    ul.navmenu li a{
+        color: #fff;
+    }
 
-    nav.nav ul.events-dropdown,.nav.nav ul.experience-dropdown,nav.nav ul.travel-dropdown{
-        display: none;
+    ul.navmenu li {
+        padding: 30px;
     }
-    nav ul li a .polygon{
-        display: none;
-    }
-    nav ul li a {
-        color: #000;
-    }
-    nav ul li  {
-        padding: 20px 10px;
-        z-index: 100;
 
+    ul.dropdown li{
+        padding: 10px;
     }
+    .dropdown-container{
+        position: relative;
+    }
+
+    .dropdown-container:hover .dropdown li a{
+        color: #fff;
+    }
+
+    .nav ul li.dropdown-container ul{
+        position: relative;
+    } 
+
     .header-right ul{
         justify-items: center;
     }
@@ -80,13 +90,14 @@
         justify-items: center;
         gap: 50px;
     }
-  
+ 
 }
 
 @media screen and (max-width:540px) {
-    .container{
-        padding: 20px;
+    .searchbar input{
+        width: 100%;
     }
+  
     .popular-events-card-container{
         grid-template-columns: 1fr;
     }
@@ -101,8 +112,38 @@
     }
     .owl-theme .owl-nav.disabled+.owl-dots{
         bottom: 0;
+        display: none;
     }
-    .logo img{
-        width: 50%;
+   
+    .owl-stage {
+        width: 100%;
     }
+    .popular-events-card-container{
+        justify-content: center;
+    }
+    .heart-img img{
+        padding: 4px 6px;
+    }
+    .compare-img img {
+        padding: 4px 6px;
+    }
+    #headerContainer{
+        padding: 10px;
+    }
+    section.para-sports .container {
+        padding: 20px;
+    }
+    .popular-events .container{
+        padding: 10px 20px;
+    }
+    section.resource .container{
+        padding: 10px 20px;
+    }
+    section.resource-brands .container{
+        padding: 10px 20px;
+    }
+    footer.footer .container{
+        padding: 20px;
+    }
+
 }
